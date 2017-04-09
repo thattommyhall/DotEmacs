@@ -1,7 +1,7 @@
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives
-	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
+             '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (when (< emacs-major-version 24)
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
@@ -33,6 +33,8 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(global-set-key (kbd "s-/") 'comment-or-uncomment-region-or-line)
 
 (defun bld/add-to-hooks (f hooks)
   "Add funcion F to all HOOKS."
