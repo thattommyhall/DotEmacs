@@ -28,6 +28,7 @@
 (tool-bar-mode 0)
 (global-hl-line-mode 1)
 (setq inhibit-splash-screen t)
+(setq visible-bell 1)
 
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
