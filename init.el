@@ -172,6 +172,8 @@
   :ensure t)
 
 (use-package textmate
+  :config
+  (textmate-mode)
   :ensure t)
 
 (use-package haml-mode
