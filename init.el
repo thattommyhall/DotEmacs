@@ -29,11 +29,9 @@
 (global-hl-line-mode 1)
 (setq inhibit-splash-screen t)
 (setq visible-bell 1)
-
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-
 (global-auto-revert-mode 1)
 
 (defun bld/add-to-hooks (f hooks)
@@ -72,8 +70,6 @@
   :diminish paredit-mode
   :config (bld/add-to-hooks #'paredit-mode
                             (append lisp-mode-hooks lisp-interaction-mode-hooks)))
-
-
 
 ;; Clojure stuff
 (use-package clojure-mode
