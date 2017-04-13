@@ -152,6 +152,8 @@
 
 (add-hook 'sh-mode-hook 'flycheck-mode)
 
+(use-package yaml-mode
+  :ensure t)
 
 (use-package rainbow-mode
   :ensure t)
