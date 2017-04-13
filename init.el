@@ -191,7 +191,8 @@
   (projectile-global-mode)
   (setq projectile-completion-system 'helm)
   (helm-projectile-on)
-  :bind ("s-t" . helm-projectile)
+  :bind (("s-t" . helm-projectile)
+         ("s-f" . helm-projectile-grep))
   )
 
 (use-package company
