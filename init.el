@@ -34,7 +34,6 @@
 (setq-default tab-width 2)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(global-set-key (kbd "s-/") 'comment-or-uncomment-region-or-line)
 
 (defun bld/add-to-hooks (f hooks)
   "Add funcion F to all HOOKS."
@@ -177,6 +176,8 @@
   :config
   (textmate-mode)
   :ensure t)
+
+(global-set-key (kbd "s-/") 'comment-or-uncomment-region-or-line)
 
 (use-package haml-mode
   :ensure t)
