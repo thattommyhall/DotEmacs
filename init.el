@@ -34,6 +34,7 @@
 (setq-default tab-width 2)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+(global-auto-revert-mode 1)
 
 (defun bld/add-to-hooks (f hooks)
   "Add funcion F to all HOOKS."
