@@ -108,11 +108,6 @@
   :config (bld/add-to-hooks #'rainbow-delimiters-mode
                             (append lisp-mode-hooks lisp-interaction-mode-hooks)))
 
-(use-package smex
-  :ensure t
-  :bind (("M-x" . smex))
-  :config (smex-initialize))  ; smart meta-x (use IDO in minibuffer)
-
 (use-package ido
   :ensure t
   :demand t
@@ -181,6 +176,10 @@
 
 (use-package projectile
   :ensure t)
+
+(use-package helm
+  :ensure t
+  :bind ("M-x" . helm-M-x))
 
 (use-package helm-projectile
   :ensure t
