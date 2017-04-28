@@ -54,6 +54,9 @@
  version-control t
  create-lockfiles nil)
 
+(use-package neotree
+  :ensure t)
+
 (defvar lisp-mode-hooks
   '(emacs-lisp-mode-hook lisp-mode-hook clojure-mode-hook))
 
