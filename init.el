@@ -192,7 +192,9 @@
   (setq projectile-completion-system 'helm)
   (helm-projectile-on)
   :bind (("s-t" . helm-projectile)
-         ("s-f" . helm-projectile-grep))
+         ("s-f" . helm-projectile-grep)
+         ("M-s-p" . projectile-switch-project)
+         )
   )
 
 (use-package company
