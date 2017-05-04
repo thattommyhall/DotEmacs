@@ -191,6 +191,7 @@
   (projectile-global-mode)
   (setq projectile-completion-system 'helm)
   (helm-projectile-on)
+  (add-to-list 'projectile-globally-ignored-directories ".terraform")
   :bind (("s-t" . helm-projectile)
          ("s-f" . helm-projectile-grep)
          ("M-s-p" . projectile-switch-project)
